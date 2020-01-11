@@ -17,6 +17,7 @@ defmodule VerwatchWeb.Router do
     pipe_through :browser
 
     get "/", PageController, :index
+    resources "/records", RecordController
   end
 
   # Other scopes may use custom stacks.

@@ -1,0 +1,28 @@
+<h1>Show Record</h1>
+
+<ul>
+
+  <li>
+    <strong>Name:</strong>
+    <%= @record.name %>
+  </li>
+
+  <li>
+    <strong>Version:</strong>
+    <%= @record.version %>
+  </li>
+
+  <li>
+    <strong>Datetime:</strong>
+    <%= @record.datetime %>
+  </li>
+
+  <li>
+    <strong>Info:</strong>
+    <%= @record.info %>
+  </li>
+
+</ul>
+
+<span><%= link "Edit", to: Routes.record_path(@conn, :edit, @record) %></span>
+<span><%= link "Back", to: Routes.record_path(@conn, :index) %></span>
